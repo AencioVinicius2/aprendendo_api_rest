@@ -3,3 +3,4 @@ npm-error.log
 
 /build
 .env
+.vscode

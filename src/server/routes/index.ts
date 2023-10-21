@@ -9,11 +9,6 @@ router.get('/', (req, res) => {
 });
 
 //router.get('/cidade', CidadesController.getAll);
-router.post(
-    '/cidades', 
-    CidadesController.createBodyValidator, 
-    CidadesController.createQueryValidator, 
-    CidadesController.create
-);
+router.post('/cidades',CidadesController.createValidation, CidadesController.create);
 
 export { router };
